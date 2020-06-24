@@ -4,3 +4,12 @@
 <h2><%= @restaurant.name %></h2>
 <p><%= @restaurant.address %></p>
 <p><%= @restaurant.category %></p>
+
+  <h4>Reviews</h4>
+
+        <% @reviews.each do |review|
+                <%= review.content %>
+                <%= review.rating %>
+            <% end %>
+            
+    <%= link_to "Leave a review now!", new_restaurant_review_path(@restaurant) %>

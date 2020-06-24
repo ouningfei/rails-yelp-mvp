@@ -29,4 +29,5 @@ shake =  { name: "Shake Shack", address: "Shoreditch", category: 'belgian' }
   restaurant = Restaurant.create!(attributes)
   puts "Created #{restaurant.name}"
 end
+
 puts "Finished!"
