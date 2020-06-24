@@ -16,6 +16,7 @@ class RestaurantsController < ApplicationController
 
   def show
     @restaurant = Restaurant.find(params[:id])
+    # added this to link reviews to restaurants
     @reviews = @restaurant.reviews
   end
 
