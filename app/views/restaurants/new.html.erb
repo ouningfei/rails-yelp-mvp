@@ -1,0 +1,12 @@
+<h1>Restaurants#new</h1>
+<p>Find me in app/views/restaurants/new.html.erb</p>
+
+<form class="new_restaurant" id="new_restaurant" action="/restaurants" accept-charset="UTF-8" method="post">
+  <label for="restaurant_name">Name</label>
+  <input type="text" name="restaurant[name]" id="restaurant_name">
+  <label for="restaurant_address">Address</label>
+  <input type="text" name="restaurant[address]" id="restaurant_address">
+  <label for="restaurant_category">Category</label>
+  <input type="number" name="restaurant[category]" id="restaurant_category">
+  <input type="submit" name="commit" value="Create Restaurant" data-disable-with="Create Restaurant">
+</form>
